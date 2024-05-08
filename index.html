@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGGLE ANIMATION</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Theme Changer Animation </h1>
+
+<div id="togglecontainer">
+    <div id="slider"></div>
+    <div id="left"><img src="sun.png"></div>
+    <div id="right"><img src="moon.png"></div>
+</div>
+
+<script>
+
+$(document).ready(function() {
+
+$("#left").click(function() {
+
+$("#slider").addClass("slidetoleft");
+$("#slider").removeClass("slidetoright");
+
+})
+
+$("#right").click(function() {
+
+$("#slider").addClass("slidetoright");
+$("#slider").removeClass("slidetoleft");
+
+})
+
+})
+
+</script>
+</body>
+</html>
